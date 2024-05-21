@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --background-color:#F4D04E;
+    --secondary-color: #FFFFFF;
+    --color-paragrafo: #7F7F7F;
+    --black-color: #111111;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "Figtree", sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    box-shadow: 10px 10px 0px 0px #111111;
+    border: 1px solid var(--black-color);
+}
+
+#img-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#img-main img {
+    width: 279px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 15px;
+}
+
+
+#titulo-sec {
+    background-color: var(--background-color);
+    width: 73px;
+    height: 26px;
+    border-radius: 5px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;
+    padding: 4px 12px;
+}
+
+h4 {
+    color: var(--black-color);       
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+p.title {
+    color: var(--black-color);
+    font-weight: 600;
+}
+
+h1 {
+    font-weight: 900;
+    color: var(--black-color);
+}
+
+article p {
+    color: var(--color-paragrafo);
+    font-weight: 600;
+    line-height: 150%;
+    text-align: justify;
+}
+
+#author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#author img {
+    width: 32px;
+    height: 32px;
+}
+
+#author span {
+    color: var(--black-color);
+    font-weight: 900;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 24px;
+}
+
+footer a {
+    color: var(--color-paragrafo);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+    section {
+        width: 384px;
+        height: 522px;
+    }
+    #img-main img {
+        width: 336px;
+    }
+}
