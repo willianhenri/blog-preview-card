@@ -33,8 +33,15 @@ section {
     justify-content: center;
     align-items: center;
     padding: 24px;
-    box-shadow: 10px 10px 0px 0px #111111;
+    box-shadow: 5px 5px #111111;
     border: 1px solid var(--black-color);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+section:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px #111111;
+    transition: .2s;
 }
 
 #img-main {
